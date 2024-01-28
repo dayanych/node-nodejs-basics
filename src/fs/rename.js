@@ -1,9 +1,9 @@
 import fs from 'fs';
 import path from 'path';
-import __dirname from './path.js';
+import __dirname from '../path.js';
 
-const OLD_PATH = path.join(__dirname, 'files/wrongFilename.txt');
-const NEW_PATH = path.join(__dirname, 'files/properFilename.md');
+const OLD_PATH = path.join(__dirname, 'fs', 'files/wrongFilename.txt');
+const NEW_PATH = path.join(__dirname, 'fs', 'files/properFilename.md');
 
 const rename = async () => {
   const isOldFileExists = fs.existsSync(OLD_PATH);

@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
-import __dirname from './path.js';
+import __dirname from '../path.js';
 
-const PATH = path.join(__dirname, 'files/fresh.txt');
+const PATH = path.join(__dirname, 'fs', 'files/fresh.txt');
 const CONTENT = 'I am fresh and young';
 
 const create = async () => {

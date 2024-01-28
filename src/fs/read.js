@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
-import __dirname from './path.js';
+import __dirname from '../path.js';
 
-const PATH = path.join(__dirname, 'files/fileToRead.txt');
+const PATH = path.join(__dirname, 'fs', 'files/fileToRead.txt');
 
 const read = async () => {
   fs.readFile(PATH, (err, data) => {
